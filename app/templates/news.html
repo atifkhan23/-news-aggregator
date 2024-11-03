@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="../static/css/styles.css"> <!-- Ensure the path to the CSS file is correct -->
+</head>
+<header>
+    <div class="container">
+        <h1>Intell<span class="red-apostrophe">!</span>news</h1>
+        
+        <div class="nav-container">
+            <nav class="nav-links">
+                <a href="javascript:void(0)" onclick="scrollToFooter()" class="nav-link">Contact Us</a>
+                
+                <a href="javascript:void(0)" onclick="scrollToFooter()" class="nav-link">Services</a>
+            </nav>
+        
+            <a href="{{ url_for('auth.register') }}" class="register-link">Register Here</a>
+        </div>
+    </div>
+</header>
+<body>
+    <div class="strip">
+        <div class="container">
+            
+            <button onclick="redirectToCategory('business')">Business</button>
+        <button onclick="redirectToCategory('entertainment')">Entertainment</button>
+        <button onclick="redirectToCategory('health')">Health</button>
+        <button onclick="redirectToCategory('science')">Science</button>
+        <button onclick="redirectToCategory('sports')">Sports</button>
+        <button onclick="redirectToCategory('education')">Education</button>
+        <button onclick="redirectToCategory('politics')">Politics</button>
+        <button onclick="redirectToCategory('technology')">Technology</button>
+        <button onclick="redirectToCategory('world')">World</button>
+    </div>
+    
+    <script>
+        function redirectToCategory(category) {
+            const form = document.createElement('form');
+            form.method = 'POST';
+            form.action = '/news';
+    
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = 'category';
+            input.value = category;
+    
+            form.appendChild(input);
+            document.body.appendChild(form);
+            form.submit();
+        }
+    </script> 
+        
+    </div>
+        <hr>
+        {% if articles %}
+            <ul>
+                {% for article in articles %}
+                    <li class="news-item">
+                        <h2><a href="{{ article.url }}" target="_blank">{{ article.title }}</a></h2>
+                        <p>{{ article.description }}</p>
+                        {% if article.image %}
+                            <img src="{{ article.image }}" alt="News Image" style="max-width: 100%; height: auto;">
+                        {% endif %}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>No news articles found.</p>
+        {% endif %}
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h2>Intell<span class="red-apostrophe">!</span>news</h2>
+                <p>Providing smart news, saving your time with personalized news feeds and updates.</p>
+                <p>Stay informed with the latest and most relevant news tailored just for you.</p>
+            </div>
+            <div class="footer-sections">
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Email: contact@intellnews.com</p>
+                    <p>Phone: +123-456-7890</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <ul>
+                        <li>News Feed</li>
+                        <li>User Preferences</li>
+                        <li>Recommended Updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function scrollToFooter() {
+            document.querySelector('footer').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+
+
+
+</body>
+</html>
+

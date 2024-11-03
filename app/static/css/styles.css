@@ -1,0 +1,603 @@
+/* Global Styles */
+/* Global Styles */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #004AAD;
+    color: white;
+    padding: 10px 20px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white; /* Set the color of Intell and news to white */
+}
+
+.red-apostrophe {
+    color: red;
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Adjust gap as needed */
+}
+
+.nav-link, .register-link {
+    padding: 8px 15px;
+    background-color: #16509db2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.nav-link:hover, .register-link:hover {
+    background-color: darkblue; /* Change background color on hover */
+}
+
+/* Ensure proper spacing and alignment */
+.nav-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Adjust gap as needed */
+}
+
+.register-link {
+    position: relative;
+    top: -10px; /* Adjust this value to move the button upwards */
+}
+
+
+.strip {
+    background-color: #1056b1b2;
+    height: 80px; /* Adjust the height as needed */
+}
+
+.strip .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%; /* Adjusted height to match the new strip height */
+}
+
+.strip button {
+    padding: 8px 15px;
+    margin: 0 1px; /* Adjusted spacing between buttons */
+    background-color: #004AAD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.strip button:hover {
+    background-color: darkblue; /* Change background color on hover */
+}
+
+.header-text {
+    font-size: 20px;
+}
+
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('../css/Modern\ Breaking\ News\ Facebook\ Post\ \(1\).png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+.hero-image h1 {
+    font-size: 3em;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+}
+
+/* Form Styles */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+form button[type="submit"] {
+    padding: 8px 16px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+    background-color: #555;
+}
+
+
+/* Additional styles for news items */
+.news-container {
+    margin-top: 20px;
+}
+
+.news-item {
+    background-color: #fff; /* White background for readability */
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for better separation */
+}
+
+.news-item h3 {
+    color: #333; /* Dark grey color for the title */
+}
+
+.news-item p {
+    color: #666; /* Lighter grey for the description */
+}
+
+/* Styles specific to index.html */
+h1, h2 {
+    color: #333; /* Dark grey color for headers */
+    font-family: 'Arial', sans-serif;
+}
+
+p {
+    color: #666; /* Light grey for paragraphs */
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Enhance the form appearance on the home page */
+#index-form {
+    background-color: #fff; /* White background for the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-top: 20px;
+}
+
+/* Ensure the form elements are styled consistently */
+#index-form label {
+    font-weight: bold;
+}
+
+#index-form select {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+#index-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #5C67F2; /* A different color for the primary action */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#index-form button:hover {
+    background-color: #434A6F;
+}
+
+/* Registration Form Styles */
+#registration-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 300px;
+    margin: 20px auto;
+}
+
+#registration-form label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+}
+
+#registration-form input[type="text"],
+#registration-form input[type="email"],
+#registration-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#registration-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #5C67F2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#registration-form input[type="submit"]:hover {
+    background-color: #434A6F;
+}
+
+/* Enhance the registration link on the homepage */
+.register-link {
+    display: inline-block;
+    background-color: #5C67F2;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.register-link:hover {
+    background-color: #434A6F;
+}
+
+
+
+
+/* Scoped Styles for the Registration Section */
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.register-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.register-container .flash-messages {
+    margin-bottom: 20px;
+}
+
+.register-container .alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.register-container .alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.register-container .alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.register-container .register-form .form-group {
+    margin-bottom: 15px;
+}
+
+.register-container .register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-container .register-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.register-container .register-form input:focus {
+    border-color: #004aad;
+    outline: none;
+}
+
+.register-container .register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container .register-form button:hover {
+    background-color: #003a7a;
+}
+
+.register-container p {
+    text-align: center;
+    color: #333;
+}
+
+.register-container p a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.register-container p a:hover {
+    text-decoration: underline;
+}
+/* Scoped Styles for the Registration Section */
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.register-container h1 {
+    text-align: center;
+    color: #333;
+}
+
+.register-container .flash-messages {
+    margin-bottom: 20px;
+}
+
+.register-container .alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.register-container .alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.register-container .alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.register-container .register-form .form-group {
+    margin-bottom: 15px;
+}
+
+.register-container .register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register-container .register-form input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.register-container .register-form input:focus {
+    border-color: #004aad;
+    outline: none;
+}
+
+.register-container .register-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #004aad;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.register-container .register-form button:hover {
+    background-color: #003a7a;
+}
+
+.register-container p {
+    text-align: center;
+    color: #333;
+}
+
+.register-container p a {
+    color: #004aad;
+    text-decoration: none;
+}
+
+.register-container p a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Styles for the Login Form */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container .flash-messages {
+    margin-bottom: 20px;
+}
+
+.login-container .alert {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login-container .alert-success {
+    background-color: #dff0d8;
+    color: #3c763d;
+}
+
+.login-container .alert-danger {
+    background-color: #f2dede;
+    color: #a94442;
+}
+
+.login-container form {
+    margin-bottom: 20px;
+}
+
+.login-container form div {
+    margin-bottom: 15px;
+}
+
+.login-container form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-container form input[type="text"],
+.login-container form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.login-container form input[type="text"]:focus,
+.login-container form input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.login-container form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-container form button:hover {
+    background-color: #0056b3;
+}
+
+.login-container p {
+    text-align: center;
+    color: #333;
+}
+
+.login-container p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+
+
+footer {
+    background-color: #004AAD;
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-content {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-content h2 {
+    margin: 0;
+    color: white;
+}
+
+.footer-content p {
+    margin: 5px 0;
+    color: white;
+}
+
+.footer-sections {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer-section h3 {
+    margin: 0;
+    color: white;
+}
+
+.footer-section p, .footer-section ul {
+    margin: 5px 0;
+    color: white;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin: 5px 0;
+}
+
+
+
+
+
